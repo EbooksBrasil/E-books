@@ -1,0 +1,195 @@
+body {
+    background-color: #132342;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p,h1,h2,h3 {
+    color: white;
+    font-weight: bolder;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.propaganda{
+    background-color: black;
+}
+
+.img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.quadrado-ebook {
+    display: inline-grid;
+    place-content: center;
+    background-color: #ff914d;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 0 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+.centro{
+    display: flex;
+}
+
+.quadrado-laranja{
+    background-color: #ff914d;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 0 10px 5px 10px;
+    text-decoration: underline;
+    
+}
+
+.fonte-grande{
+    font-size: 50px;
+}
+
+.fonte-media{
+    font-size: 25px;
+}
+
+.fonte-extra-media{
+    font-size: 60px;
+}
+
+.quadrado-branco{
+    flex:1 1 auto;
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 500px;
+    max-height:200px;
+    margin: 0 8px 0 8px;
+}
+.quadrado-branco1{
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px 10px;
+    text-shadow: 0 0 10px black;
+}
+
+.quadrado-produtos {
+    background-color: #77a7e2;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.p-italico{
+    font-style: italic;
+}
+
+.p-preto{
+    color: black;
+    font-weight: bolder;  
+}
+
+.span{
+    color: white;
+    font-weight: bolder;
+}
+
+.propaganda1{
+    background-color: #214a9d;
+    border-radius: 10px;
+    inline-size: 400px;
+    padding: 0 15px 15px 15px;
+    margin: 10px 0 0 0;
+}
+
+.p-laranja{
+    color: #ff914d;
+}
+
+.p-cinza{
+    color:slategray;
+}
+
+.quadrado-preco {
+    border: 7px white solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 5px white;
+    position: relative;
+    width: fit-content;
+    padding: 10px 15px;
+}
+
+.quadrado-preco::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 0px 15px 5px white inset;
+}
+
+.quadrado-euQuero {
+    background-color: #ff914d;
+    border-radius: 20px;
+    width:fit-content;
+    margin-top: 0.5em;
+    padding: 5px 15px;
+}
+
+@media screen and (max-width: 425px) {
+    
+    .fonte-grande{
+        font-size: 30px;
+    }
+    .fonte-media{
+        font-size: 15px;
+    }
+
+    .fonte-extra-media{
+        font-size: 15px;
+    }
+
+    .centro{
+        justify-content: center;
+    }
+
+    .quadrado-preco {
+        border: 6px white solid;
+        border-radius: 10px;
+        box-shadow: 0px 0px 40px 5px white;
+        position: relative;
+        width: fit-content;
+    }
+    
+    .quadrado-preco::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0px 0px 15px 5px white inset;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .fonte-extra-media{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .propaganda1{
+        min-width: 80%;
+    }
+    .fonte-extra-media{
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+}
